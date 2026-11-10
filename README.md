@@ -36,8 +36,8 @@ so its probability should not be trusted at face value.
 Requires Python 3.12 or 3.13.
 
 ```bash
-git clone https://github.com/USERNAME/REPOSITORY.git
-cd REPOSITORY
+git clone https://github.com/ishfaqmuhammad03/ace-peptide-predictor.git
+cd ace-peptide-predictor
 
 python -m venv .venv
 # Windows:        .venv\Scripts\activate
