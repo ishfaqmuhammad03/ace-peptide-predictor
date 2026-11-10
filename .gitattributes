@@ -1,0 +1,6 @@
+# Keep line endings consistent between Windows and Linux checkouts
+* text=auto
+
+# Treat the model files as binary so git never tries to diff or convert them
+*.joblib binary
+*.svg   binary

@@ -1,0 +1,19 @@
+# Conda environment for the ACE-Inhibitory Peptide Predictor web server.
+#   conda env create -f environment.yml
+#   conda activate webserver
+# The pip section is what actually pins the versions; scikit-learn must be 1.9.1
+# because the saved model was created with it.
+name: webserver
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - fastapi>=0.115
+      - uvicorn[standard]>=0.30
+      - numpy>=2.0
+      - pandas>=2.2
+      - scikit-learn==1.9.1
+      - joblib>=1.4
+      - biopython>=1.83

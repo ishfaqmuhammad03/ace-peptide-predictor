@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACE-Inhibitory Peptide Predictor</title>
+<link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1 id="title">ACE-Inhibitory Peptide Predictor</h1>
+  <p class="sub" id="subtitle">Paste peptide sequences and the server predicts whether each one inhibits angiotensin-converting enzyme.</p>
+</header>
+
+<main>
+  <section class="card">
+    <label for="seqbox"><b>Peptide sequences</b> &mdash; one per line, or FASTA, or <code>name,SEQUENCE</code></label>
+    <textarea id="seqbox" rows="9" spellcheck="false" placeholder="VVYPW&#10;LVVYPW&#10;TSKY&#10;IA"></textarea>
+    <div class="row">
+      <button id="run" class="primary">Predict</button>
+      <button id="example" class="ghost">Load example</button>
+      <button id="clear" class="ghost">Clear</button>
+      <input type="file" id="file" accept=".txt,.fasta,.fa,.csv" hidden>
+      <button id="upload" class="ghost">Upload file</button>
+      <a id="exampleFile" class="linkbtn" href="/static/example_peptides.txt" download>Download example file</a>
+      <span id="status" class="status"></span>
+    </div>
+  </section>
+
+  <section id="resultCard" class="card hidden">
+    <div class="row between">
+      <div id="summary" class="summary"></div>
+      <div class="hint">Click a column heading to sort.</div>
+      <button id="download" class="ghost">Download CSV</button>
+    </div>
+    <div class="tablewrap">
+      <table id="results">
+        <thead><tr>
+          <th class="sortable" data-key="id" data-type="num">#</th>
+          <th class="sortable" data-key="name" data-type="str">Name</th>
+          <th class="sortable" data-key="sequence" data-type="str">Sequence</th>
+          <th class="sortable" data-key="length" data-type="num">Len</th>
+          <th class="sortable" data-key="probability" data-type="num">Probability</th>
+          <th class="sortable" data-key="label" data-type="num">Prediction</th>
+          <th class="sortable" data-key="ad_distance" data-type="num">Applicability domain</th>
+          <th>Note</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>About this model</h2>
+    <div id="about" class="about">Loading model details&hellip;</div>
+    <p class="fine">Predictions are for research use only. A probability near 0.50 is undecided rather than a confident call.</p>
+  </section>
+</main>
+
+<footer><span id="footer"></span></footer>
+<script src="/static/app.js"></script>
+</body>
+</html>

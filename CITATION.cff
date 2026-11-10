@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ACE-Inhibitory Peptide Predictor"
+abstract: >-
+  A web server that predicts whether a peptide inhibits angiotensin-converting
+  enzyme (IC50 < 50 micromolar), using an extremely randomised trees classifier
+  trained on 879 sequence descriptors.
+authors:
+  - family-names: "Ishfaq"
+    given-names: "Muhammad"
+    affiliation: "Huanggang Normal University, Huanggang 438000, China"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+version: "1.0"
+date-released: "2026-11-10"
+license: MIT
+repository-code: "https://github.com/ishfaqmuhammad03/ace-peptide-predictor"
+keywords:
+  - peptide
+  - ACE inhibitor
+  - QSAR
+  - machine learning

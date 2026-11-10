@@ -1,0 +1,22 @@
+# virtual environments
+.venv/
+venv/
+env/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Word lock files
+~$*.docx
+
+# local run artefacts
+*.log
+requirements.lock

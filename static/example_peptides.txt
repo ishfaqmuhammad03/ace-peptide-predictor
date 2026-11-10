@@ -1,0 +1,22 @@
+# Example input for the ACE-Inhibitory Peptide Predictor
+# Lines starting with # are ignored. Use any ONE of the three formats below.
+#
+# 1) One sequence per line:
+VVYPW
+LVVYPW
+VVYPWTQ
+TSKY
+LFP
+IA
+AL
+VLDAFSDGLK
+#
+# 2) A name and a sequence, separated by a comma:
+# lactotripeptide,IPP
+# casein_f23,FFVAPFPEVFGK
+#
+# 3) FASTA:
+# >peptide_1
+# VVYPW
+# >peptide_2
+# TSKY

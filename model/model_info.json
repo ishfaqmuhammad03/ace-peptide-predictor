@@ -1,0 +1,33 @@
+{
+  "model": "ExtraTreesClassifier on 879 sequence descriptors (no feature scaling)",
+  "hyperparameters": {
+    "n_estimators": 427,
+    "max_features": 0.22738021150262838,
+    "min_samples_leaf": 1,
+    "min_samples_split": 7,
+    "criterion": "gini",
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "n_features": 879,
+  "training": "878 peptides for training; 220 held out for testing",
+  "positive_class": "ACE-inhibitory activity, IC50 < 50 uM",
+  "test_metrics": {
+    "ACC": 0.7364,
+    "MCC": 0.4757,
+    "ROC_AUC": 0.8111,
+    "AUPRC": 0.8287,
+    "F1": 0.7387,
+    "BAL_ACC": 0.7381,
+    "Precision": 0.7736,
+    "Sensitivity": 0.7069,
+    "Specificity": 0.7692
+  },
+  "ad_threshold": 28.6057,
+  "versions": {
+    "python": "3.13.18",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.3",
+    "joblib": "1.6.0"
+  }
+}
